@@ -86,12 +86,12 @@
                         {% endfor %}
                         {% endif %}
                         <div class="form-group">
-                            <label for="firstname">Full Name(Session/Batch)</label>
+                            <label for="firstname">Full Name</label>
                             <input class="form-control" name="first_name"  value="{{account.first_name}}" type="text">
                             <p class="text-danger error py-1">{{form.first_name.errors}}</p>
                         </div>
                         <div class="form-group">
-                            <label for="lastname">Job</label>
+                            <label for="lastname">Session</label>
                             <input class="form-control" name="last_name"  value="{{account.last_name}}" type="text">
                             <p class="text-danger error py-1">{{form.last_name.errors}}</p>
                         </div>
@@ -110,6 +110,11 @@
                             <input class="form-control" name="session"  value="{{account.profile.session}}" type="text">
                             <p class="text-danger error py-1">{{form.session.errors}}</p>
                         </div> {% endcomment %}
+                        <div class="form-group">
+                            <label for="employer">Employer</label>
+                            <input class="form-control" name="current_employer"  value="{{account.current_employer}}" type="text">
+                            <p class="text-danger error py-1">{{form.current_employer.errors}}</p>
+                        </div>
                         <div class="form-group">
                             <label for="username">Username</label>
                             <input class="form-control" name="username"  value="{{account.username}}" type="text">

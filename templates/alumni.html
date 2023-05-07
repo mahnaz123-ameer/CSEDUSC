@@ -9,8 +9,9 @@
   <table>
     <thead>
       <tr>
-        <th>Name(Session/Batch)</th>
-        <th>Job</th>
+        <th>Name</th>
+        <th>Session</th>
+        <th>Employer</th>
         <th>Email</th>
       </tr>
     </thead>
@@ -19,6 +20,7 @@
         <tr>
           <td>{{ user.first_name }}</td>
           <td>{{ user.last_name }}</td>
+          <td>{{ user.current_employer }}</td>
           <td>{{ user.email }}</td>
         </tr>
       {% endfor %}

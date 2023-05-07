@@ -12,6 +12,7 @@ class User(AbstractUser):
             "unique": "The email must be unique"
         }
     )
+    current_employer = models.TextField(blank=True)
     
     profile_image = models.ImageField(
         null=True,
