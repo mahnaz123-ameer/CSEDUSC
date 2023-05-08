@@ -19,7 +19,7 @@ class User(AbstractUser):
         blank=True,
         upload_to="profile_image"
     )
-    followers = models.ManyToManyField("Follow")
+    # followers = models.ManyToManyField("Follow")
 
     REQUIRED_FIELDS = ["email"]
     objects = CustomUserManager()
